@@ -5,19 +5,6 @@
 			try {
 				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-				window.addEventListener("onEmbeddedMessagingReady", e => {
-					// Campos visíveis no pré-chat
-					embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
-					"_firstName": {
-						"value": "User",
-						"isEditableByEndUser": true
-					},
-					"_lastName": {
-						"value": "Test",
-						"isEditableByEndUser": true
-					}
-					});
-
 				embeddedservice_bootstrap.init(
 					'00DOu000001GFQj',
 					'Amex_Session',
